@@ -8,8 +8,8 @@ services:
       - "443:443"
     volumes:
       - './nginx.conf:/etc/nginx/nginx.conf'
-      - '../../etc/letsencrypt/live/sendemail.space/:/etc/ssl/live'
-      - '../../etc/letsencrypt/archive/sendemail.space/:/etc/ssl/archive'
+      - '../../etc/letsencrypt/live/tlc-imperiya.ru/:/etc/ssl/live'
+      - '../../etc/letsencrypt/archive/tlc-imperiya.ru/:/etc/ssl/archive'
       - './static:/var/www/static' 
       - './media:/media' 
     depends_on:
